@@ -50,7 +50,7 @@
               "type": "text"
             }
           },
-          "block_order": ["menu", "text"]
+          "block_order": ["text", "menu"]
         }
       }
     }
