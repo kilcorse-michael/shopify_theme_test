@@ -105,9 +105,9 @@
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
   </head>
-  <header>
-    {{pages.cart.title}}}
-  </header>
+
+    
+ 
   <body>
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
@@ -115,6 +115,9 @@
 
     {% section 'announcement-bar' %}
     {% section 'header' %}
+    <div>
+      {{pages.cart.title}}
+    </div>
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
