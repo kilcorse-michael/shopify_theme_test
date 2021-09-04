@@ -1,0 +1,38 @@
+<div class = "big-text-test">
+    <h1> {{section.settings.text-test-biggest}} </h1>
+    <h2> {{section.settings.text-test-bigger}} </h2>
+    <h3> {{section.settings.text-test-big}} </h3>
+</div>
+
+{% schema %}
+    {
+        "name" : "Big Text",
+        "settings" : [
+            {
+                "id" : "text-test-biggest",
+                "type" : "text",
+                "label" : "Biggest Text",
+                "default" : "Biggest"
+            },
+            {
+                "id" : "text-test-bigger",
+                "type" : "text",
+                "label" : "Bigger Text",
+                "default" : "Bigger"
+            },
+            {
+                "id" : "text-test-big",
+                "type" : "text",
+                "label" : "Big Text",
+                "default" : "Big"
+            },
+
+        ],
+        "presets" : [
+            {
+                "name" : "Big Text Test",
+                "category" : "Custom"
+            }
+        ]
+    }
+{% endschema %}
