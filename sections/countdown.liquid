@@ -32,18 +32,17 @@ var x = setInterval(function() {
 </script>
 
 {% schema %}
-    {
-     "name" : "Custome Date",
-     "settings" : [
-         "id" : "custom-date",
-         "type" : "text",
-         "label" : "Date to Count Down To",
-         "default" : "1/1/2022"
-     ],
-     presets: [
-         "name" : "Custom Counter",
-         "category" : "Custom"
-     ]
-
+{
+    "name":"Custome Date",
+    "settings":{
+       "id":"custom-date",
+       "type":"text",
+       "label":"Date to Count Down To",
+       "default":"1/1/2022"
+    },
+    "presets":{
+       "name":"Custom Counter",
+       "category":"Custom"
     }
+ }
 {% endschema %}
