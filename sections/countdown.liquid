@@ -6,7 +6,8 @@
 </div>
 
 <script>
-var countDownDate = new Date({{section.settings.custom-date}}).getTime();
+var customDate = "section.settings.custom_date";
+var countDownDate = new Date({{customDate}}).getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
 
@@ -35,7 +36,7 @@ var x = setInterval(function() {
 {
     "name":"Custome Date",
     "settings":[{
-       "id":"custom-date",
+       "id":"custom_date",
        "type":"text",
        "label":"Date to Count Down To",
        "default":"1/1/2022"
