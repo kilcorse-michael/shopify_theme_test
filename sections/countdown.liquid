@@ -1,12 +1,11 @@
-<div id="my_container">
+<div>
     <div id="counter">
-        {{custom_date}}
+      {{custom_date}}
     </div>
 </div>
 
 <script>
-/*
-var customDate = section.settings.custom_date;
+{% comment %} var customDate = section.settings.custom_date;
 var countDownDate = new Date({{customDate}}).getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -30,8 +29,7 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("counter").innerHTML = "EXPIRED";
   }
-}, 1000); 
-*/
+}, 1000); {% endcomment %}
 </script>
 
 {% schema %}
