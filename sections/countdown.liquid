@@ -1,9 +1,11 @@
-<div class="card">
+<div id="my_container">
     <div id="counter">
+        {{custom_date}}
     </div>
 </div>
 
 <script>
+/*
 var customDate = section.settings.custom_date;
 var countDownDate = new Date({{customDate}}).getTime();
 // Update the count down every 1 second
@@ -28,7 +30,8 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("counter").innerHTML = "EXPIRED";
   }
-}, 1000);
+}, 1000); 
+*/
 </script>
 
 {% schema %}
