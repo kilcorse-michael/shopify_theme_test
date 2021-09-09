@@ -6,6 +6,7 @@
 
 <script>
   {% assign customDate = sections.settings.custom_date %}
+  var customDate = '{{customDate}}'
   console.log("Hello" + '{{customDate}}');
 {% comment %} 
 var countDownDate = new Date({{customDate}}).getTime();
