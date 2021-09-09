@@ -5,7 +5,7 @@
 </div>
 
 <script>
-  var customDate = section.settings.custom_date;
+  var customDate = {{section.settings.custom_date | json}};
   console.log(customDate);
 {% comment %} 
 var countDownDate = new Date({{customDate}}).getTime();
