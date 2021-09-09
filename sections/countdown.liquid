@@ -5,7 +5,9 @@
 </div>
 
 <script>
-{% comment %} var customDate = section.settings.custom_date;
+  var customDate = section.settings.custom_date;
+  console.log(customDate);
+{% comment %} 
 var countDownDate = new Date({{customDate}}).getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
